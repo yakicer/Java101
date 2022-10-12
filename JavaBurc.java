@@ -3,7 +3,7 @@ public class JavaBurc {
     public static void main(String[] args) {
         //Değişkenlerin oluşturulması.
         Scanner inp = new Scanner(System.in, "857");
-        String day,month;
+        String day,month,sign="Ejderya";
         boolean a = false, b = false, c, d = true,flag =true;
         //Arraylist ile ayları bir liste içerisinde depoladım ve ileride 
         //koşul kontrolü için kullanılacak. Kullanımı aşağıdaki gibidir.
@@ -45,43 +45,31 @@ public class JavaBurc {
             //Bütün koşullar sağlanırsa burç hesaplama işlemine geçiliyor.
             System.out.print("***********************\nBurcunuz: ");
             if (month.toLowerCase().equals("şubat")) {
-                if (Integer.parseInt(day) > 19) System.out.println("Balık Burcu");
-                else System.out.println("Kova Burcu");
+                sign = (Integer.parseInt(day) > 19)?"Balık":"Kova";
             } else if (month.toLowerCase().equals("mart")) {
-                if (Integer.parseInt(day) > 20) System.out.println("Balık Burcu");
-                else System.out.println("Kova Burcu");
+                sign = (Integer.parseInt(day) > 20)?"Koç":"Balık";
             } else if (month.toLowerCase().equals("nisan")) {
-                if (Integer.parseInt(day) > 20) System.out.println("Boğa Burcu");
-                else System.out.println("Koç Burcu");
+                sign = (Integer.parseInt(day) > 20)?"Boğa":"Koç";
             } else if (month.toLowerCase().equals("mayıs")) {
-                if (Integer.parseInt(day) > 21) System.out.println("İkizler Burcu");
-                else System.out.println("Boğa Burcu");
+                sign = (Integer.parseInt(day) > 21)?"İkizler":"Boğa";
             } else if (month.toLowerCase().equals("haziran")) {
-                if (Integer.parseInt(day) > 22) System.out.println("Yengeç Burcu");
-                else System.out.println("İkizler Burcu");
+                sign = (Integer.parseInt(day) > 22)?"Yengeç":"İkizler";
             } else if (month.toLowerCase().equals("temmuz")) {
-                if (Integer.parseInt(day) > 22) System.out.println("Aslan Burcu");
-                else System.out.println("Yengeç Burcu");
+                sign = (Integer.parseInt(day) > 22)?"Aslan":"Yengeç";
             } else if (month.toLowerCase().equals("ağustos")) {
-                if (Integer.parseInt(day) > 22) System.out.println("Başak Burcu");
-                else System.out.println("Aslan Burcu");
+                sign = (Integer.parseInt(day) > 22)?"Başak":"Aslan";
             } else if (month.toLowerCase().equals("eylül")) {
-                if (Integer.parseInt(day) > 22) System.out.println("Terazi Burcu");
-                else System.out.println("Başak Burcu");
+                sign = (Integer.parseInt(day) > 22)?"Terazi":"Başak";
             } else if (month.toLowerCase().equals("ekim")) {
-                if (Integer.parseInt(day) > 22) System.out.println("Akrep Burcu");
-                else System.out.println("Terazi Burcu");
+                sign = (Integer.parseInt(day) > 22)?"Akrep":"Terazi";
             } else if (month.toLowerCase().equals("kasım")) {
-                if (Integer.parseInt(day) > 21) System.out.println("Yay Burcu");
-                else System.out.println("Akrep Burcu");
+                sign = (Integer.parseInt(day) > 21)?"Yay":"Akrep";
             } else if (month.toLowerCase().equals("aralık")) {
-                if (Integer.parseInt(day) > 21) System.out.println("Oğlak Burcu");
-                else System.out.println("Yay Burcu");
+                sign = (Integer.parseInt(day) > 21)?"Oğlak":"Yay";
             } else if (month.toLowerCase().equals("ocak")) {
-                if (Integer.parseInt(day) > 21) System.out.println("Kova Burcu");
-                else System.out.println("Oğlak Burcu");
+                sign = (Integer.parseInt(day) > 21)?"Kova":"Oğlak";
             }
-            System.out.println("***********************");
+            System.out.printf("%s\n***********************\n",sign);
             //Kullanıcı devam etmek isterse diye kontrol sağlanıp 
             //istemiyorsa eğer while döngüsü kırılıyor.
             System.out.println("Devam Etmek İstiyor musunuz ?(Devam Etmek İçin Evet Yazınız):");
