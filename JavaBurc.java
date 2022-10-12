@@ -2,11 +2,9 @@ import java.util.*;
 public class JavaBurc {
     public static void main(String[] args) {
         //Değişkenlerin oluşturulması.
-        boolean flag = true;
         Scanner inp = new Scanner(System.in, "857");
-        String day;
-        String month;
-        boolean a = false, b = false, c, d = true;
+        String day,month;
+        boolean a = false, b = false, c, d = true,flag =true;
         //Arraylist ile ayları bir liste içerisinde depoladım ve ileride 
         //koşul kontrolü için kullanılacak. Kullanımı aşağıdaki gibidir.
         ArrayList < String > months = new ArrayList < String > (Arrays.asList("eylül", "ekim", "kasım", "aralık", "ocak",
