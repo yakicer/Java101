@@ -7,19 +7,17 @@ public class JavaPow4n5 {
         n = inp.nextInt();
         inp.close();
         if(n>=0){
-        System.out.printf("4^0 = 1\n5^0 = 1\n");
-        if(n!=0)
-        System.out.printf("4^1 = 4\n5^1 = 5\n");
+        System.out.printf("5^0 = 1\n4^0 = 1\n");
             for(int i=1;i<n;i++){
+                if(toplam5<=n){
+                    System.out.printf("5^%d = %d\n",(i),toplam5);
+                }
+                if(toplam4<=n){
+                    System.out.printf("4^%d = %d\n",(i),toplam4);
+                }
+                if(toplam5 > n && toplam4 >n) break;
                 toplam5 = 5*toplam5;
-                toplam4 = 4*toplam4;
-                if(toplam5<n){
-                    System.out.printf("5^%d = %d\n",(i+1),toplam5);
-                }
-                if(toplam4<n){
-                    System.out.printf("4^%d = %d\n",(i+1),toplam4);
-                }
-                if(toplam5 > n && toplam4 >n) break;            
+                toplam4 = 4*toplam4;            
             }
         }else System.out.println("Hatalı Giriş !");
     }
