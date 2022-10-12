@@ -68,6 +68,7 @@ public class JavaUcus {
         case 1: {
             if (Integer.parseInt(tip) == 1) tutar -= tutar * 0.5;
             else {
+                tutar = tutar * 2;
                 tutar -= tutar * 0.5;
                 tutar -= tutar * 0.2;
             }
@@ -75,6 +76,7 @@ public class JavaUcus {
         case 2: {
             if (Integer.parseInt(tip) == 1) tutar -= tutar * 0.3;
             else {
+                tutar = tutar * 2;
                 tutar -= tutar * 0.3;
                 tutar -= tutar * 0.2;
             }
@@ -82,6 +84,7 @@ public class JavaUcus {
         case 3: {
             if (Integer.parseInt(tip) == 1) tutar -= tutar * 0.1;
             else {
+                tutar = tutar * 2;
                 tutar -= tutar * 0.1;
                 tutar -= tutar * 0.2;
             }
