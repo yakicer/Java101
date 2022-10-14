@@ -6,6 +6,7 @@ public class JavaArmstrong {
         System.out.print("Lütfen Üssü Alınacak Sayıyı Giriniz: ");
         int n = inp.nextInt();
         int k = n;
+        inp.close();
         while(n>10)
         {
             N += n%10;
