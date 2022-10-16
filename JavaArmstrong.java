@@ -13,6 +13,7 @@ public class JavaArmstrong {
             n=n/10;
             flag++;
         }
+        flag++;
         N+=n;
         System.out.printf("%d sayısı %d basamaklıdır ve basamaklarının toplamı = %d",k,flag,N);
     }
