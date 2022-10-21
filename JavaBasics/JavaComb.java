@@ -1,3 +1,4 @@
+package JavaBasics;
 import java.util.Scanner;
 public class JavaComb {
     public static void main(String[] args) {

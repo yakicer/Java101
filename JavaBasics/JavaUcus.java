@@ -1,3 +1,4 @@
+package JavaBasics;
 import java.util.Scanner;
 public class JavaUcus {
     public static void main(String[] args) {

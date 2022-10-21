@@ -1,3 +1,4 @@
+package JavaBasics;
 import java.util.Scanner;
 public class JavaTersUcgen {
     public static void main(String[] args) {

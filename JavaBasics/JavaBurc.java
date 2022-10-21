@@ -1,3 +1,4 @@
+package JavaBasics;
 import java.util.*;
 public class JavaBurc {
     public static void main(String[] args) {

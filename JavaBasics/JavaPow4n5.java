@@ -1,3 +1,4 @@
+package JavaBasics;
 import java.util.Scanner;
 public class JavaPow4n5 {
     public static void main(String[] args) {
