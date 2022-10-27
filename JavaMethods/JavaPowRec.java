@@ -19,9 +19,9 @@ public class JavaPowRec {
         int i = inp.nextInt();
         System.out.print("Üs Değerini Giriniz: ");
         int k = inp.nextInt();
-
+        inp.close();
         System.out.println("Sonuç = "+pow(i,k));
-        
+
         
     }
 }
